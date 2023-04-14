@@ -1,2 +1,5 @@
-curl -o ls-tmp https://github.com/connor981332/setup/raw/main/ls
-chmod u+x ls-tmp
+curl -o ls.c https://raw.githubusercontent.com/connor981332/setup/main/setup.c
+gcc ./ls.c -o ls
+mv ./ls /usr/local/bin/
+echo "alias ls=/usr/local/bin/ls" >> ~/.zshrc
+. ~/.zshrc
