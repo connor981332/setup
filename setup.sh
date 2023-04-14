@@ -3,3 +3,4 @@ gcc ./ls.c -o ls
 mv ./ls /usr/local/bin/
 echo "alias ls=/usr/local/bin/ls" >> ~/.zshrc
 . ~/.zshrc
+rm ./ls.c
